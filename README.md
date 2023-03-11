@@ -7,39 +7,20 @@ This project has been made up with Mongoose (MongoDB), Express , Passport and Re
 
 ## Instalation and how to run the project
 
- server : `node server/bin/www `
+Install dependencies from the server : `npm install`
 
- client : ` cd client && npm start `
+INstall dependencies from the client : `cd client && npm install`
+
+
+Run server : `npm start`
+
+Run client : ` npm run client `
 
  ## Usage
 
  ### Structure 
 
- ./client
-    ./src
-        ./app
-            ./store.js
-        ./Components
-            ./Footer.js
-            ./Home.js
-            ./Navbar.js
-            ./Spinner.js
-        ./features
-            ./api
-            ./auth
-            ./cart
-            ./items
-            ./user
-        ./Pages
-            ./About/
-            ./Error.js
-        ./style
-            ./sass/
-    ./public
-        index.html
-    ./App.js
-    ./index.js
-
+```
 ./server
     ./app
         ./controllers/ 
@@ -50,6 +31,31 @@ This project has been made up with Mongoose (MongoDB), Express , Passport and Re
         ./express.js
         ./mongodb.js
         ./passport.js
+     ./client
+        ./src
+            ./app
+                ./store.js
+            ./Components
+                ./Footer.js
+                ./Home.js
+                ./Navbar.js
+                ./Spinner.js
+            ./features
+                ./api
+                ./auth
+                ./cart
+                ./items
+                ./user
+            ./Pages
+                ./About/
+                ./Error.js
+            ./style
+                ./sass/
+        ./public
+            index.html
+        ./App.js
+        ./index.js
+
     ./routes
         ./auth.js
         ./items.js
@@ -57,5 +63,6 @@ This project has been made up with Mongoose (MongoDB), Express , Passport and Re
         user.js
     app.js
     routes.js
+```
 
 If you want to contribuite you need the password and the secret word. If you want this information please send me a private message 
