@@ -1,0 +1,66 @@
+.home-section{
+    display: grid;
+    box-sizing: content-box;
+    padding: 5rem 3rem;
+    grid-template-columns: 20rem 1fr;
+    justify-content: space-between;
+    gap: 5rem;
+    .filter-btn{
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .filters-section{
+        padding: 2rem;
+        height: fit-content;
+        background-color: $light;
+        h4{
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 0.75px;
+            margin-bottom: 1rem;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+
+            label{
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : $medium-size) {
+    .home-section{
+        display: flex;
+        flex-direction: column;
+
+        .filter-btn{
+            position: relative;
+            visibility: visible;
+        }
+
+        .filters-section{
+            position: absolute;
+            box-sizing: border-box;
+            margin-right: 2rem;
+            height: 0;
+            transform: translateY(2.6rem);
+            padding: 0 2rem;
+            overflow: hidden;
+            transition: 1s;
+            z-index: 10;
+            width: calc(100% - 6rem);
+
+            &.active{
+                height: 31rem;
+                padding: 2rem;
+            }
+        }
+
+
+    }
+}
